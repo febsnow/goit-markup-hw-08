@@ -1,0 +1,46 @@
+/* Social List */
+.social {
+  @include flex(flex, space-between, center);
+  &.list {
+    @extend %list;
+  }
+  .page-footer & {
+    padding: 0;
+  }
+}
+.page-footer .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-item-link {
+  @extend %centred-items;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  transition: $animation;
+
+  .page-footer & {
+    background-color: $main-text-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    transform: scale(1.1);
+  }
+}
+
+.social-logo {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: $animation;
+
+  .social-item-link:hover &,
+  .social-item-link:focus & {
+    fill: #ffffff;
+    transform: scale(1.1);
+  }
+  .page-footer & {
+    fill: #ffffff;
+  }
+}

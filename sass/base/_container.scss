@@ -1,0 +1,28 @@
+$container-width: 1200px;
+$container-padding: 94px 15px;
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  padding: $container-padding;
+
+  .hero & {
+    margin: 0;
+    padding: 0;
+  }
+  .page-header & {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .page-footer & {
+    @include flex(flex, space-between, baseline);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 45px;
+    padding-bottom: 28px;
+  }
+  .our-works & {
+    padding-top: 72px;
+  }
+}

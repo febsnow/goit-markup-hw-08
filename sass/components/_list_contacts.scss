@@ -1,0 +1,39 @@
+/* Contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  .page-header & {
+    @include flex(flex, flex-start, center);
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts-item-link {
+  display: flex;
+  align-items: center;
+  color: $main-text-color;
+
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    color: $active-color;
+    fill: $active-color;
+  }
+}

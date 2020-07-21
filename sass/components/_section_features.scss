@@ -1,0 +1,30 @@
+/* Features section */
+.features {
+  @include flex(flex, space-between);
+  @extend %list;
+
+  &-item {
+    width: 270px;
+  }
+  &-image {
+    @extend %centred-items;
+    width: 270px;
+    height: 120px;
+    background-color: $additional-bg-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  & .item-title {
+    color: $additional-text-color;
+    line-height: 0.87;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  & .item-text {
+    text-align: left;
+  }
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}

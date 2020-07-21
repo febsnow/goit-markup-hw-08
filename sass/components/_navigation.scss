@@ -1,0 +1,63 @@
+/* Navigation */
+.nav {
+  display: flex;
+  @extend %list;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-item-link {
+  position: relative;
+
+  display: block;
+  color: $additional-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+
+.nav-item-link {
+  &:before {
+    @extend %slider;
+    left: 0;
+    transform-origin: left;
+  }
+  &:hover:before,
+  &:focus:before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.nav-item-link {
+  &:after {
+    @extend %slider;
+    right: 0;
+    transform-origin: right;
+  }
+  &:hover:after,
+  &:focus:after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.nav-item-link.active {
+  @extend %active;
+
+  &:after {
+    @extend %slider;
+
+    width: 100%;
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}

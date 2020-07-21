@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <a class="logo" id="top" href="./index.html"><span class="active">Web</span> Studio</a>
+        <nav class="navigation">
+          <ul class="nav list">
+            <li class="nav-item">
+              <a class="nav-item-link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-item"><a class="nav-item-link active" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="contacts-item">
+            <a class="contacts-item-link" href="mailto:info@devstudio.com">
+              <svg class="icon-mail">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a class="contacts-item-link" href="tel:+380961111111">
+              <svg class="icon-phone">
+                <use href="./images/icons.svg#icon-cellphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="our-works">
+        <div class="container">
+          <h1 class="visually-hidden">Наши работы</h1>
+          <!-- Скрыть заголовок -->
+          <ul class="filters list">
+            <li class="filters-item"><button type="button" class="button shadow">Все</button></li>
+            <li class="filters-item"><button type="button" class="button shadow">Веб-сайты</button></li>
+            <li class="filters-item"><button type="button" class="button shadow">Приложения</button></li>
+            <li class="filters-item"><button type="button" class="button shadow">Дизайн</button></li>
+            <li class="filters-item"><button type="button" class="button shadow">Маркетинг</button></li>
+          </ul>
+          <ul class="works list">
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-laptop-opt.jpg" alt="Изображение ноутбука" />
+                  <p class="item-description">
+                    Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
+                    для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Технокряк</h2>
+                  <p class="filter-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-basket-opt.jpg" alt="Постер New Orlean vs Golden Star" />
+                  <p class="item-description">
+                    Какой-то текст на тему....
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-sea-opt.jpg" alt="Изображение лого ресторана" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Ресторан Seafood</h2>
+                  <p class="filter-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-headphones-opt.jpg" alt="Изображение наушников" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Проект Prime</h2>
+                  <p class="filter-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-box-opt.jpg" alt="Изображение коробок" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Проект Boxes</h2>
+                  <p class="filter-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/imac-opt.jpg" alt="Изображение монитора" />
+                  <p class="item-description">
+                    Какой-то текст на тему
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Inspiration has no Borders</h2>
+                  <p class="filter-type">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-book-opt.jpg" alt="Изображение книги" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Издание Limited Edition</h2>
+                  <p class="filter-type">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/p-lab-opt.jpg" alt="Изображение логотипа компании" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Проект LAB</h2>
+                  <p class="filter-type">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="item-link" href="#">
+                <div class="item-image">
+                  <img src="./images/laptop-opt.jpg" alt="Изображение ноутбука" />
+                  <p class="item-description">
+                    Какой-то текст на тему...
+                  </p>
+                </div>
+                <div class="item-info">
+                  <h2 class="item-title">Growing Business</h2>
+                  <p class="filter-type">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div>
+          <a class="logo" href="#top"><span class="active">Web</span> Studio</a>
+          <address class="address">
+            <ul class="address list">
+              <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address-item">
+                <a class="address-item-link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="address-item-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-social">
+          <p class="join">Присоединяйтесь</p>
+          <ul class="social list">
+            <li class="social-item">
+              <a class="social-item-link" href="#">
+                <svg class="social-logo">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="#">
+                <svg class="social-logo">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="#">
+                <svg class="social-logo">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link" href="#">
+                <svg class="social-logo">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="join-form">
+          <label class="join" for="subscribe">Подпишитесь на рассылку</label>
+          <div class="subscription">
+            <input class="join-form-field" type="email" name="email" id="subscribe" placeholder="E-mail@mail.com" />
+            <button class="button main" type="button">
+              Подписаться
+              <svg class="send-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <small class="copy">2020 | Developed by GoIT Students</small>
+    </footer>
+  </body>
+</html>

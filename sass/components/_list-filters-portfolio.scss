@@ -1,0 +1,13 @@
+.filters {
+  @extend %list;
+  @extend %centred-items;
+  margin-bottom: 50px;
+
+  &-item {
+    min-width: 73px;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

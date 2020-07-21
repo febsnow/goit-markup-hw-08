@@ -1,0 +1,12 @@
+/* Header */
+.page-header {
+  /* position: sticky;
+  top: 0;
+  z-index: 100; */
+  background-color: $header-bg-color;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  font-weight: 500;
+  border-bottom: 1px solid #ececec;
+}

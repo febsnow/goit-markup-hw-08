@@ -1,0 +1,39 @@
+/* Our team */
+.our-team {
+  text-align: center;
+  @include font(16px, 1.19);
+  background: $additional-bg-color;
+
+  & .title {
+    @extend %title;
+  }
+
+  & .list {
+    @extend %list;
+  }
+}
+
+.team {
+  @include flex(flex, space-between);
+
+  &-item {
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+  }
+  &-item-info {
+    text-align: center;
+    padding: 30px 32px 24px;
+    background: #ffffff;
+  }
+  & .item-title {
+    @include font(16px, 1.19);
+    font-weight: 500;
+    color: $additional-text-color;
+    text-transform: none;
+    margin-bottom: 10px;
+  }
+  & .item-description {
+    margin-bottom: 16px;
+  }
+}

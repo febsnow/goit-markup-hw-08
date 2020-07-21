@@ -1,0 +1,55 @@
+/* Footer Join form */
+.page-footer {
+  .join-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .join {
+    font-weight: 700;
+    line-height: 0.87;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .subscription {
+    display: flex;
+  }
+}
+.join-form {
+  &-field {
+    display: block;
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $footer-additional-text-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &::placeholder {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      color: inherit;
+    }
+  }
+}
+.send-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 1000ms;
+
+  .subscription .button.main:hover &,
+  .subscription .button.main:focus & {
+    transform: translateY(-200%) translateX(200%);
+  }
+}

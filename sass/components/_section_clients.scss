@@ -1,0 +1,37 @@
+/* Clients */
+.clients {
+  & .title {
+    @extend %title;
+  }
+  &.list {
+    @include flex(flex, space-between);
+    @extend %list;
+  }
+}
+
+.clients-item-link {
+  @extend %centred-items;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  width: 170px;
+
+  transition: $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $active-color;
+    transform: scale(1.1);
+  }
+}
+
+.clients-logo {
+  fill: $clients-logo-fill-color;
+
+  transition: $animation;
+
+  .clients-item-link:hover &,
+  .clients-item-link:focus & {
+    fill: $active-color;
+  }
+}
