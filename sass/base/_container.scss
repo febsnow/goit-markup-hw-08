@@ -1,10 +1,10 @@
 $container-width: 1200px;
-$container-padding: 94px 15px;
+$container-padding_480px: 60px 15px;
+$container-padding_1200px: 94px 15px;
 
 .container {
-  width: $container-width;
   margin: 0 auto;
-  padding: $container-padding;
+  padding: $container-padding_480px;
 
   .hero & {
     margin: 0;
@@ -13,16 +13,26 @@ $container-padding: 94px 15px;
   .page-header & {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
     padding-top: 0px;
     padding-bottom: 0px;
+    min-height: 60px;
+    @media screen and (min-width: 768px) {
+    }
   }
+
   .page-footer & {
-    @include flex(flex, space-between, baseline);
+    text-align: center;
+    padding: $container-padding_480px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 45px;
-    padding-bottom: 28px;
+    @media screen and (min-widht: 768px) {
+      @include flex(flex, space-between, baseline);
+    }
   }
   .our-works & {
-    padding-top: 72px;
+    @media screen and (min-width: 768px) {
+      padding-top: 72px;
+    }
   }
 }

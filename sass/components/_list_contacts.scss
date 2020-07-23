@@ -1,14 +1,25 @@
 /* Contacts */
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @extend %list;
+  margin-bottom: 20px;
+  padding: 0;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .contacts-item {
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   .page-header & {
-    @include flex(flex, flex-start, center);
+    // @include flex(flex, flex-start, center);
   }
 }
 

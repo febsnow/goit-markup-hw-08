@@ -2,6 +2,9 @@
 html {
   box-sizing: border-box;
 }
+body.modal-open {
+  overflow: hidden;
+}
 *,
 ::before,
 ::after {

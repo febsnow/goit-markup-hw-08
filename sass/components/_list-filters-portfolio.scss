@@ -1,13 +1,19 @@
 .filters {
   @extend %list;
-  @extend %centred-items;
-  margin-bottom: 50px;
+  margin: -4px;
 
+  @media screen and (min-width: 768px) {
+    // @extend %centred-items;
+    margin-bottom: 50px;
+  }
   &-item {
     min-width: 73px;
-
-    &:not(:last-child) {
-      margin-right: 8px;
+    display: inline-block;
+    margin: 4px;
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
     }
   }
 }

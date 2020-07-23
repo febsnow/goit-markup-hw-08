@@ -1,26 +1,40 @@
 /* Navigation */
+.navigation {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 305px;
+  }
+}
 .nav {
-  display: flex;
   @extend %list;
-
   &-item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    &-item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .nav-item-link {
   position: relative;
 
-  display: block;
+  display: inline-block;
   color: $additional-text-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   transition: $animation;
 
   &:hover,
   &:focus {
     color: $active-color;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

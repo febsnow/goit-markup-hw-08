@@ -1,8 +1,12 @@
 /* Social List */
 .social {
-  @include flex(flex, space-between, center);
+  @extend %centred-items;
+
   &.list {
     @extend %list;
+    @media screen and (min-width: 768px) {
+      @include flex(flex, space-between, center);
+    }
   }
   .page-footer & {
     padding: 0;
@@ -11,6 +15,7 @@
 .page-footer .social-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .social-item-link {
   @extend %centred-items;
   border-radius: 50%;
@@ -43,4 +48,7 @@
   .page-footer & {
     fill: #ffffff;
   }
+}
+.join-social {
+  margin-bottom: 60px;
 }

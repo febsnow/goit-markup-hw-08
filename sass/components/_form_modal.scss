@@ -95,6 +95,8 @@
   @extend %centred-items;
   margin-bottom: 30px;
   color: $main-text-color;
+  font-size: 12px;
+  line-height: 1.17;
 
   &-icon {
     display: inline-block;

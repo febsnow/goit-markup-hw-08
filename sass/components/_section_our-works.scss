@@ -1,23 +1,27 @@
 /* Our Works */
 .works {
   @extend %list;
-  @include flex(flex, space-between);
-  flex-wrap: wrap;
-  margin: -15px;
+  margin: 40px auto 0px;
 
-  &-item {
-    display: block;
-    width: 370px;
-    margin: 15px;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.01);
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+  }
+  @media screen and (min-width: 768px) {
+    @include flex(flex, space-between);
+    flex-wrap: wrap;
+    &-item {
+      display: block;
+      width: 370px;
+      margin: 15px;
     }
   }
 }
 
 .works-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .item-title {
     color: $additional-text-color;
     font-size: 18px;
@@ -37,9 +41,14 @@
   }
   .item-image {
     position: relative;
-
+    width: 450px;
+    height: 294px;
     border-radius: 5px 5px 0px 0px;
     overflow: hidden;
+
+    img {
+      width: 100%;
+    }
 
     .item-description {
       position: absolute;

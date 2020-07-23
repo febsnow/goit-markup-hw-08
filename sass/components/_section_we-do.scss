@@ -1,8 +1,12 @@
 /* We do */
 .we-do {
-  @include flex(flex, space-between);
   @extend %list;
-
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    @include flex(flex, space-between);
+  }
   & .container {
     padding-top: 0px;
   }

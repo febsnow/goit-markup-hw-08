@@ -2,10 +2,28 @@
 .clients {
   & .title {
     @extend %title;
+    margin-bottom: 30px;
   }
   &.list {
-    @include flex(flex, space-between);
     @extend %list;
+    @media screen and (min-width: 480px) {
+      @include flex(flex, space-around);
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &-item {
+    padding: 0 20px;
+    &:not(:last-child) {
+      @media screen and (max-width: 479px) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 480px) {
+      padding: 0;
+      margin: 15px;
+    }
   }
 }
 
@@ -14,7 +32,13 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 90px;
-  width: 170px;
+  width: 210px;
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 170px;
+  }
 
   transition: $animation;
 

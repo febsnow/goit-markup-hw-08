@@ -5,7 +5,7 @@
 
   background-image: linear-gradient(to right, $hero-bg-color, $hero-bg-color), url('../images/Header-img-opt.jpg');
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -15,9 +15,12 @@
 
   &-title {
     color: #ffffff;
-    @include font(44px, 1.36, 0.06em);
+    @include font(26px, 1.62, 0.06em);
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      @include font(44px, 1.36, 0.06em);
+    }
   }
 }

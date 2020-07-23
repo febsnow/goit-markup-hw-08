@@ -2,17 +2,15 @@
 .logo {
   font-family: $logo-font;
   color: $additional-text-color;
-  @include font(26px, 1.19);
+  @include font(24px, 1.67);
   font-weight: 700;
-  margin-right: 85px;
 
   & .active {
     @extend %active;
   }
   .page-footer & {
     color: #ffffff;
-    @include font(22px, 1.19);
-    margin-right: 0px;
-    margin-bottom: 8px;
+
+    margin-bottom: 20px;
   }
 }
