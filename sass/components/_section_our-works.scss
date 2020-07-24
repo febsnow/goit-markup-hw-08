@@ -1,16 +1,17 @@
 /* Our Works */
 .works {
   @extend %list;
-  margin: 40px auto 0px;
 
   &:hover,
   &:focus {
     transform: scale(1.01);
   }
-  @media screen and (min-width: 768px) {
-    @include flex(flex, space-between);
-    flex-wrap: wrap;
-    &-item {
+  &-item {
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      @include flex(flex, space-between);
+      flex-wrap: wrap;
       display: block;
       width: 370px;
       margin: 15px;
@@ -19,6 +20,10 @@
 }
 
 .works-item {
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -41,13 +46,14 @@
   }
   .item-image {
     position: relative;
-    width: 450px;
-    height: 294px;
+
+    max-height: 294px;
     border-radius: 5px 5px 0px 0px;
     overflow: hidden;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
 
     .item-description {

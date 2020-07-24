@@ -14,11 +14,11 @@ $container-padding_1200px: 94px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding-top: 0px;
     padding-bottom: 0px;
-    min-height: 60px;
+    height: 60px;
     @media screen and (min-width: 768px) {
+      height: 80px;
     }
   }
 
@@ -26,8 +26,9 @@ $container-padding_1200px: 94px 15px;
     text-align: center;
     padding: $container-padding_480px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    @media screen and (min-widht: 768px) {
-      @include flex(flex, space-between, baseline);
+    @media screen and (min-width: 768px) {
+      @include flex(flex, space-around, baseline);
+      flex-wrap: wrap;
     }
   }
   .our-works & {

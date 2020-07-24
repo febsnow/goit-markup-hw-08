@@ -1,14 +1,20 @@
 /* Navigation */
 .navigation {
-  margin-bottom: 60px;
+  @include font(18px, 1.67, 0.02em);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
-    margin-right: 305px;
+    @include font(14px, 1.14, 0.02em);
+    margin-right: 84px;
   }
 }
 .nav {
   @extend %list;
-  &-item:not(:last-child) {
-    margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    &-item:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;

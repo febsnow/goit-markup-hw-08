@@ -4,13 +4,17 @@
   color: $additional-text-color;
   @include font(24px, 1.67);
   font-weight: 700;
+  display: inline-block;
 
   & .active {
     @extend %active;
   }
+  @media screen and (min-width: 768px) {
+    flex-shrink: 0;
+    margin-right: 81px;
+  }
   .page-footer & {
     color: #ffffff;
-
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 }
