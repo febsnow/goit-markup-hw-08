@@ -1,0 +1,40 @@
+/* What We do */
+.what-we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  .title {
+    @extend %title;
+    margin-bottom: 50px;
+  }
+  .we-do {
+    @extend %list;
+
+    @media screen and (min-width: 1200px) {
+      @include flex(flex, space-around);
+      margin: -15px;
+    }
+  }
+}
+.we-do-item {
+  width: 370px;
+  margin: 15px;
+  & .item-link {
+    position: relative;
+    display: block;
+  }
+
+  & .item-title {
+    @extend %item-title-font;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    color: #ffffff;
+    background-color: $third-bg-color;
+  }
+}

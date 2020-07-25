@@ -34,31 +34,33 @@
               <li class="nav-item"><a class="nav-item-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="contacts list">
-            <li class="contacts-item">
-              <a class="contacts-item-link" href="mailto:info@devstudio.com">
-                <svg class="icon-mail">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-item-link" href="tel:+380961111111">
-                <svg class="icon-phone">
-                  <use href="./images/icons.svg#icon-cellphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="our-contacts">
+            <ul class="contacts list">
+              <li class="contacts-item">
+                <a class="contacts-item-link" href="mailto:info@devstudio.com">
+                  <svg class="icon-mail">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-item-link" href="tel:+380961111111">
+                  <svg class="icon-phone">
+                    <use href="./images/icons.svg#icon-cellphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="our-works">
-        <div class="container">
-          <h1 class="visually-hidden">Наши работы</h1>
+      <div class="container">
+        <section class="our-works">
+          <h1 class="title visually-hidden">Наши работы</h1>
           <!-- Скрыть заголовок -->
           <ul class="filters list">
             <li class="filters-item"><button type="button" class="button shadow">Все</button></li>
@@ -196,8 +198,8 @@
               </a>
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -261,7 +263,6 @@
           </div>
         </form>
       </div>
-      <small class="copy">2020 | Developed by GoIT Students</small>
     </footer>
     <script src="./js/menu.js"></script>
   </body>

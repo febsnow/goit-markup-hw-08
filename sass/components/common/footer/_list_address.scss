@@ -1,0 +1,25 @@
+/* Address list */
+.address {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  &.list {
+    @extend %list;
+  }
+  &-item {
+    font-style: normal;
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: 9px;
+      }
+    }
+  }
+}
+.address-item-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: $animation;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
