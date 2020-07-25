@@ -6,10 +6,6 @@ $container-padding_1200px: 0px 15px;
   margin: 0 auto;
   padding: $container-padding_480px;
 
-  @media screen and (min-width: 1200px) {
-    padding: $container-padding_1200px;
-  }
-
   .page-header & {
     display: flex;
     align-items: center;
@@ -28,6 +24,11 @@ $container-padding_1200px: 0px 15px;
     }
     @media screen and (min-width: 768px) {
       @include flex(flex, space-around, baseline);
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flex(flex, space-between, baseline);
       flex-wrap: wrap;
     }
   }
