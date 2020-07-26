@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
   <body>
@@ -73,7 +73,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-laptop-opt.jpg" alt="Изображение ноутбука" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-laptop-354w.webp    354w,
+                        ./images/Portfolio/p-laptop-370w.webp    370w,
+                        ./images/Portfolio/p-laptop-450w.webp    450w,
+                        ./images/Portfolio/p-laptop-708w@2x.webp 700w,
+                        ./images/Portfolio/p-laptop-740w@2x.webp 740w,
+                        ./images/Portfolio/p-laptop-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-laptop-354w.jpg    354w,
+                        ./images/Portfolio/p-laptop-370w.jpg    370w,
+                        ./images/Portfolio/p-laptop-450w.jpg    450w,
+                        ./images/Portfolio/p-laptop-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-laptop-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-laptop-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-laptop-450w.jpg"
+                      alt="Изображение ноутбука"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                     для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -88,7 +116,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-basket-opt.jpg" alt="Постер New Orlean vs Golden Star" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-basket-354w.webp    354w,
+                        ./images/Portfolio/p-basket-370w.webp    370w,
+                        ./images/Portfolio/p-basket-450w.webp    450w,
+                        ./images/Portfolio/p-basket-708w@2x.webp 700w,
+                        ./images/Portfolio/p-basket-740w@2x.webp 740w,
+                        ./images/Portfolio/p-basket-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-basket-354w.jpg    354w,
+                        ./images/Portfolio/p-basket-370w.jpg    370w,
+                        ./images/Portfolio/p-basket-450w.jpg    450w,
+                        ./images/Portfolio/p-basket-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-basket-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-basket-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-basket-450w.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему....
                   </p>
@@ -102,7 +158,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-sea-opt.jpg" alt="Изображение лого ресторана" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-sea-354w.webp    354w,
+                        ./images/Portfolio/p-sea-370w.webp    370w,
+                        ./images/Portfolio/p-sea-450w.webp    450w,
+                        ./images/Portfolio/p-sea-708w@2x.webp 700w,
+                        ./images/Portfolio/p-sea-740w@2x.webp 740w,
+                        ./images/Portfolio/p-sea-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-sea-354w.jpg    354w,
+                        ./images/Portfolio/p-sea-370w.jpg    370w,
+                        ./images/Portfolio/p-sea-450w.jpg    450w,
+                        ./images/Portfolio/p-sea-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-sea-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-sea-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-sea-450w.jpg"
+                      alt="Изображение лого ресторана"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>
@@ -116,7 +200,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-headphones-opt.jpg" alt="Изображение наушников" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-headphones-354w.webp    354w,
+                        ./images/Portfolio/p-headphones-370w.webp    370w,
+                        ./images/Portfolio/p-headphones-450w.webp    450w,
+                        ./images/Portfolio/p-headphones-708w@2x.webp 700w,
+                        ./images/Portfolio/p-headphones-740w@2x.webp 740w,
+                        ./images/Portfolio/p-headphones-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-headphones-354w.jpg    354w,
+                        ./images/Portfolio/p-headphones-370w.jpg    370w,
+                        ./images/Portfolio/p-headphones-450w.jpg    450w,
+                        ./images/Portfolio/p-headphones-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-headphones-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-headphones-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-headphones-450w.jpg"
+                      alt="Изображение наушников"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>
@@ -130,7 +242,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-box-opt.jpg" alt="Изображение коробок" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-box-354w.webp    354w,
+                        ./images/Portfolio/p-box-370w.webp    370w,
+                        ./images/Portfolio/p-box-450w.webp    450w,
+                        ./images/Portfolio/p-box-708w@2x.webp 700w,
+                        ./images/Portfolio/p-box-740w@2x.webp 740w,
+                        ./images/Portfolio/p-box-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-box-354w.jpg    354w,
+                        ./images/Portfolio/p-box-370w.jpg    370w,
+                        ./images/Portfolio/p-box-450w.jpg    450w,
+                        ./images/Portfolio/p-box-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-box-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-box-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-box-450w.jpg"
+                      alt="Изображение коробок"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>
@@ -144,7 +284,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/imac-opt.jpg" alt="Изображение монитора" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-imac-354w.webp    354w,
+                        ./images/Portfolio/p-imac-370w.webp    370w,
+                        ./images/Portfolio/p-imac-450w.webp    450w,
+                        ./images/Portfolio/p-imac-708w@2x.webp 700w,
+                        ./images/Portfolio/p-imac-740w@2x.webp 740w,
+                        ./images/Portfolio/p-imac-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-imac-354w.jpg    354w,
+                        ./images/Portfolio/p-imac-370w.jpg    370w,
+                        ./images/Portfolio/p-imac-450w.jpg    450w,
+                        ./images/Portfolio/p-imac-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-imac-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-imac-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-imac-450w.jpg"
+                      alt="Изображение монитора"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему
                   </p>
@@ -158,7 +326,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-book-opt.jpg" alt="Изображение книги" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-book-354w.webp    354w,
+                        ./images/Portfolio/p-book-370w.webp    370w,
+                        ./images/Portfolio/p-book-450w.webp    450w,
+                        ./images/Portfolio/p-book-708w@2x.webp 700w,
+                        ./images/Portfolio/p-book-740w@2x.webp 740w,
+                        ./images/Portfolio/p-book-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-book-354w.jpg    354w,
+                        ./images/Portfolio/p-book-370w.jpg    370w,
+                        ./images/Portfolio/p-book-450w.jpg    450w,
+                        ./images/Portfolio/p-book-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-book-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-book-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-book-450w.jpg"
+                      alt="Изображение книги"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>
@@ -172,7 +368,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/p-lab-opt.jpg" alt="Изображение логотипа компании" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-lab-354w.webp    354w,
+                        ./images/Portfolio/p-lab-370w.webp    370w,
+                        ./images/Portfolio/p-lab-450w.webp    450w,
+                        ./images/Portfolio/p-lab-708w@2x.webp 700w,
+                        ./images/Portfolio/p-lab-740w@2x.webp 740w,
+                        ./images/Portfolio/p-lab-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-lab-354w.jpg    354w,
+                        ./images/Portfolio/p-lab-370w.jpg    370w,
+                        ./images/Portfolio/p-lab-450w.jpg    450w,
+                        ./images/Portfolio/p-lab-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-lab-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-lab-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-lab-450w.jpg"
+                      alt="Изображение логотипа компании"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>
@@ -186,7 +410,35 @@
             <li class="works-item">
               <a class="item-link" href="#">
                 <div class="item-image">
-                  <img src="./images/laptop-opt.jpg" alt="Изображение ноутбука" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/p-notebook-354w.webp    354w,
+                        ./images/Portfolio/p-notebook-370w.webp    370w,
+                        ./images/Portfolio/p-notebook-450w.webp    450w,
+                        ./images/Portfolio/p-notebook-708w@2x.webp 700w,
+                        ./images/Portfolio/p-notebook-740w@2x.webp 740w,
+                        ./images/Portfolio/p-notebook-900w@2x.webp 900w,
+
+                      "
+                      type="image/webp"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                    <img
+                      srcset="
+                        ./images/Portfolio/p-notebook-354w.jpg    354w,
+                        ./images/Portfolio/p-notebook-370w.jpg    370w,
+                        ./images/Portfolio/p-notebook-450w.jpg    450w,
+                        ./images/Portfolio/p-notebook-708w@2x.jpg 700w,
+                        ./images/Portfolio/p-notebook-740w@2x.jpg 740w,
+                        ./images/Portfolio/p-notebook-900w@2x.jpg 900w,
+
+                      "
+                      src="./images/Portfolio/p-notebook-450w.jpg"
+                      alt="Изображение ноутбука"
+                      sizes="(min-width: 1160px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="item-description">
                     Какой-то текст на тему...
                   </p>

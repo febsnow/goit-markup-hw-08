@@ -13,7 +13,6 @@
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    justify-content: space-around;
     margin: 0;
   }
   &-item {
@@ -25,16 +24,16 @@
       }
     }
     @media screen and (min-width: 480px) {
-      width: 450px;
+      max-width: 450px;
     }
     @media screen and (min-width: 768px) {
-      margin: 15px;
+      width: calc((100% - 4 * 15px) / 2);
       max-width: 354px;
+      margin: 15px;
     }
     @media screen and (min-width: 1200px) {
-      width: (100% / 4);
+      width: calc((100% - 8 * 15px) / 4);
       max-width: 270px;
-      margin: 0;
     }
   }
   &-image {

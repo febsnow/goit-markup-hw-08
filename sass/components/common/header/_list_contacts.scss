@@ -10,18 +10,18 @@
 }
 .contacts {
   @extend %list;
-  display: flex;
   @media screen and (max-width: 767px) {
+    display: flex;
     align-items: center;
+    flex-direction: column;
   }
   @media screen and (min-width: 768px) {
     @include font(12px, 1.67, 0.02em);
   }
-  @media screen and (max-width: 899px) {
-    flex-direction: column;
-  }
-  @media screen and (min-width: 900px) {
+
+  @media screen and (min-width: 1200px) {
     @include font(14px, 1.14, 0.02em);
+    display: flex;
   }
 }
 .contacts-item {
@@ -30,7 +30,7 @@
       margin-bottom: 16px;
     }
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 50px;
     }

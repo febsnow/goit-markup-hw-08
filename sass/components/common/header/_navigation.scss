@@ -7,10 +7,6 @@
   }
   @media screen and (min-width: 768px) {
     @include font(14px, 1.14, 0.02em);
-    // margin-right: 84px;
-  }
-  @media screen and (min-width: 1200px) {
-    // margin-right: 300px;
   }
 }
 .nav {

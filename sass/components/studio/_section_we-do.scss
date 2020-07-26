@@ -17,7 +17,8 @@
   }
 }
 .we-do-item {
-  width: 370px;
+  width: calc((100% - 6 * 15px) / 3);
+  max-width: 370px;
   margin: 15px;
   & .item-link {
     position: relative;

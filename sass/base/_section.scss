@@ -15,6 +15,10 @@ section {
   &.we-do {
     padding-top: 0;
   }
+  &.our-team {
+    background: $additional-bg-color;
+    background-position: center;
+  }
 
   &.our-works {
     @media screen and (min-width: 768px) {
