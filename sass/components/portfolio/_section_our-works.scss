@@ -70,15 +70,25 @@
       transition: $animation;
 
       display: block;
+      font-size: 15px;
       color: #ffffff;
-      @include font(18px, 1.56);
 
       text-align: left;
       width: 100%;
       height: 100%;
-      padding: 63px 24px;
       border-radius: 5px 5px 0px 0px;
       background-color: $works-item-bg-color;
+      padding: 10px;
+      @media screen and(min-width: 480px) {
+        @include font(18px, 1.56);
+        padding: 77px 24px;
+      }
+      @media screen and(min-width: 768px) {
+        padding: 49px 24px;
+      }
+      @media screen and(min-width: 1200px) {
+        padding: 63px 24px;
+      }
     }
   }
 }
