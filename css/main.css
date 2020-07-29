@@ -319,6 +319,9 @@ section.our-team {
 
 @media screen and (min-width: 1200px) {
   .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     margin-right: 85px;
   }
 }
